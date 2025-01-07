@@ -6,7 +6,6 @@
     --card-bg: rgba(255, 255, 255, 0.1);
 }
 
-/* GLOBAL STYLES */
 body {
     margin: 0;
     padding: 0;
@@ -21,14 +20,24 @@ body {
 }
 
 @keyframes dynamic-gradient {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 50% 50%; }
-    50% { background-position: 100% 50%; }
-    75% { background-position: 50% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-/* HEADER & NAVIGATION */
+/* Navigation */
 header {
     background: var(--nav-bg);
     padding: 1rem 0;
@@ -66,7 +75,7 @@ nav a:hover {
     background-color: var(--accent-color);
 }
 
-/* HERO SECTION */
+/* Section Hero */
 #hero {
     text-align: center;
     padding: 6rem 2rem;
@@ -99,7 +108,7 @@ nav a:hover {
     background-color: #16a085;
 }
 
-/* FEATURE GRID */
+/* Features Preview */
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -125,94 +134,92 @@ nav a:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* ADS SECTION */
 .hero-ad-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem; /* Espacement entre les éléments */
     margin-bottom: 2rem;
 }
 
 .ad-space {
-    width: 200px;
-    height: 750px;
-    background: rgba(255, 255, 255, 0.1);
+    width: 200px; /* Ajustez la largeur selon vos besoins */
+    height: 750px; /* Ajustez la hauteur selon vos besoins */
+    background: rgba(255, 255, 255, 0.1); /* Couleur légèrement transparente */
     color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
 }
 
+/* Bandeau publicitaire en dessous de la section Accueil */
 #hero-ad-banner {
     background: var(--card-bg);
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
     margin-top: 2rem;
-    display: block;
+    display: block; 
 }
 
-/* AD CONTENT */
 .ad-banner {
+    width: 100%;
     max-width: 800px;
-    margin: 0 auto;
     background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    font-size: 1.2rem;
+    margin: 0 auto; /* Pour centrer l'élément */
 }
-
+/* Notre nouveau conteneur pour le contenu de la pub */
 .ad-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
+/* Image du livre */
 .pub-livre {
-    width: 200px;
     max-width: 100%;
+    height: auto;
     border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* petit effet ombré */
+    transition: transform 0.3s ease;
 }
 
-.ad-text {
-    flex: 1;
-    color: var(--text-color);
+.pub-livre:hover {
+    transform: scale(1.02); /* léger zoom au survol */
 }
 
-.ad-text h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.8rem;
-}
-
-.ad-text p {
-    margin-bottom: 1.5rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.ad-text .cta-button {
-    display: inline-block;
-    background: var(--accent-color);
-    color: var(--text-color);
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
+/* Style du paragraphe */
+.ad-content p {
     font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+    opacity: 0.9;
+}
+/* Section centrale */
+#hero {
+    flex: 1;
+    text-align: center;
 }
 
-.ad-text .cta-button:hover {
-    background-color: #16a085;
-    transform: translateY(-2px);
+/* Publicité gauche */
+.ad-left {
+    order: -1;
 }
 
-/* DOWNLOAD SECTION */
+/* Publicité droite */
+.ad-right {
+    order: 1;
+}
+
+/* Download Section */
 #download {
     text-align: center;
     padding: 2rem 1rem;
@@ -275,7 +282,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* FOOTER */
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
