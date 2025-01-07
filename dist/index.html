@@ -16,6 +16,20 @@
 </head>
 
 <body>
+  <!-- Bandeau publicitaire en haut -->
+  <div class="ad-banner top-banner">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <!-- En-tête du site -->
   <header>
     <div class="nav-container">
@@ -53,31 +67,11 @@
 
   <!-- Contenu principal -->
   <main class="fade-in">
-    <!-- SECTION : Publicité AdSense -->
-    <section id="middle-adsense" class="middle-ad-blue">
-      <div class="adsense-banner">
-        <!-- Script Google AdSense -->
-        <!-- Remplace "ca-pub-XXXXXXXXXXXX" et "XXXXXXXXXX" par tes vraies valeurs -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-XXXXXXXXXXXX"
-             data-ad-slot="XXXXXXXXXX"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </section>
-
-    <!-- SECTION principale avec pub Amazon à gauche et AdSense à droite -->
     <div class="container">
       <div class="hero-ad-wrapper">
         <!-- PUBLICITÉ GAUCHE -->
         <div class="ad-space ad-left">
           <div class="ad-content-left">
-            <!-- Vérifie que "images/pub-livre.png" existe bien sur Netlify -->
             <a href="https://www.amazon.fr/dp/B0DQB3PQCD" target="_blank" rel="noopener noreferrer">
               <img src="images/pub-livre.png" alt="Roman Heroic Fantasy" class="book-cover" />
             </a>
@@ -102,7 +96,6 @@
         </section>
 
         <!-- PUBLICITÉ DROITE -->
-        <!-- Remplace "ca-pub-XXXXXXXXXXXX" et "XXXXXXXXXX" par tes vraies valeurs -->
         <div class="ad-space ad-right">
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <ins class="adsbygoogle"
@@ -116,18 +109,6 @@
           </script>
         </div>
       </div>
-
-      <!-- SECTION DES FONCTIONNALITÉS -->
-      <section id="features-preview" class="feature-grid">
-        <div class="card">
-          <h2>Téléchargement Rapide</h2>
-          <p>Téléchargez vos contenus en quelques secondes grâce à notre technologie optimisée.</p>
-        </div>
-        <div class="card">
-          <h2>Support Multiformat</h2>
-          <p>Compatible avec tous les formats populaires : MP4, MP3, WEBM, MKV et plus encore.</p>
-        </div>
-      </section>
     </div>
   </main>
 
@@ -142,11 +123,9 @@
       </div>
     </div>
   </footer>
-</body>
-</html>
 
-  <!-- BLOC Google AdSense en bas de la page d’accueil -->
-  <div class="footer-adsense">
+  <!-- Bandeau publicitaire en bas -->
+  <div class="ad-banner bottom-banner">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
          style="display:block"
@@ -155,7 +134,8 @@
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
-</footer>
+</body>
+</html>

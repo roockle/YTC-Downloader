@@ -6,6 +6,7 @@
     --card-bg: rgba(255, 255, 255, 0.1);
 }
 
+/* GLOBAL STYLES */
 body {
     margin: 0;
     padding: 0;
@@ -20,24 +21,14 @@ body {
 }
 
 @keyframes dynamic-gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    25% {
-        background-position: 50% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    75% {
-        background-position: 50% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-/* Navigation */
+/* HEADER & NAVIGATION */
 header {
     background: var(--nav-bg);
     padding: 1rem 0;
@@ -75,7 +66,7 @@ nav a:hover {
     background-color: var(--accent-color);
 }
 
-/* Section Hero */
+/* HERO SECTION */
 #hero {
     text-align: center;
     padding: 6rem 2rem;
@@ -108,7 +99,7 @@ nav a:hover {
     background-color: #16a085;
 }
 
-/* Features Preview */
+/* FEATURE GRID */
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -134,29 +125,29 @@ nav a:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* ADS SECTION */
 .hero-ad-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem; /* Espacement entre les éléments */
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
 .ad-space {
-    width: 200px; /* Ajustez la largeur selon vos besoins */
-    height: 750px; /* Ajustez la hauteur selon vos besoins */
-    background: rgba(255, 255, 255, 0.1); /* Couleur légèrement transparente */
+    width: 200px;
+    height: 750px;
+    background: rgba(255, 255, 255, 0.1);
     color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 8px; /* Coins arrondis */
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
 }
 
-/* Bandeau publicitaire en dessous de la section Accueil */
 #hero-ad-banner {
     background: var(--card-bg);
     padding: 3rem 1rem;
@@ -164,17 +155,17 @@ nav a:hover {
     display: block;
 }
 
+/* AD CONTENT */
 .ad-banner {
     max-width: 800px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-/* Contenu interne du bandeau : image + texte */
 .ad-content {
     display: flex;
     align-items: center;
@@ -182,18 +173,16 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* Image du livre */
 .pub-livre {
     width: 200px;
     max-width: 100%;
     border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     flex-shrink: 0;
 }
 
-/* Zone texte dans la pub */
 .ad-text {
-    flex: 1; /* S’étend pour prendre l’espace restant */
+    flex: 1;
     color: var(--text-color);
 }
 
@@ -207,7 +196,6 @@ nav a:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Bouton "Voir sur Amazon" */
 .ad-text .cta-button {
     display: inline-block;
     background: var(--accent-color);
@@ -224,7 +212,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Download Section */
+/* DOWNLOAD SECTION */
 #download {
     text-align: center;
     padding: 2rem 1rem;
@@ -287,7 +275,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1rem;
