@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | YTC Downloader</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="<%= page === 'home' ? 'active' : '' %>">
+                            <i class="fas fa-home"></i> Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="telechargement.html" class="<%= page === 'download' ? 'active' : '' %>">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a-propos.html" class="<%= page === 'about' ? 'active' : '' %>">
+                            <i class="fas fa-info-circle"></i> À propos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="<%= page === 'support' ? 'active' : '' %>">
+                            <i class="fas fa-headset"></i> Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="<%= page === 'faq' ? 'active' : '' %>">
+                            <i class="fas fa-question-circle"></i> FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="fade-in">

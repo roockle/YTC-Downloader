@@ -1,0 +1,34 @@
+<!-- views/download.ejs -->
+<%- include('partials/header') %>
+
+<div class="container">
+    <section id="download">
+        <h1 class="page-title">Télécharger YTC Downloader</h1>
+        <p class="section-desc">Compatible avec Windows, macOS et Linux. Choisissez la version adaptée à votre système.</p>
+
+        <div class="download-options">
+            <div class="download-card">
+                <img src="/icons/windows.png" alt="Windows" class="os-icon">
+                <h2>Windows</h2>
+                <p>Pour Windows 10 et 11</p>
+                <a href="/downloads/ytcdownloader-windows.exe" class="btn">Télécharger</a>
+            </div>
+
+            <div class="download-card">
+                <img src="/icons/macos.png" alt="macOS" class="os-icon">
+                <h2>macOS</h2>
+                <p>Pour macOS 10.15 et plus</p>
+                <a href="/downloads/ytcdownloader-macos.dmg" class="btn">Télécharger</a>
+            </div>
+
+            <div class="download-card">
+                <img src="/icons/linux.png" alt="Linux" class="os-icon">
+                <h2>Linux</h2>
+                <p>Pour Ubuntu/Debian</p>
+                <a href="/downloads/ytcdownloader-linux.deb" class="btn">Télécharger</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<%- include('partials/footer') %>

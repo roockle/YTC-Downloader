@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Inclusion de l'en-tête -->
+    <%- include('partials/header') %>
+</head>
+<body>
+    <!-- SECTION : Publicité AdSense -->
+    <section id="middle-adsense" class="middle-ad-blue">
+        <div class="adsense-banner">
+            <!-- Script Google AdSense -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXX" <!-- Remplace par ton ID éditeur -->
+                 data-ad-slot="XXXXXXXXXX"           <!-- Remplace par ton ID d’emplacement -->
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </section>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="container">
+        <!-- Wrapper publicités gauche et droite -->
+        <div class="hero-ad-wrapper">
+            <!-- PUBLICITÉ GAUCHE -->
+            <div class="ad-space ad-left">
+                <div class="ad-content-left">
+                    <a href="https://www.amazon.fr/dp/B0DQB3PQCD" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/pub-livre.png" alt="Roman Heroic Fantasy" class="book-cover" />
+                    </a>
+                    <div class="ad-text-marketing">
+                        <h3>Plongez dans l'aventure !</h3>
+                        <p>
+                            Découvrez un univers épique, des héros inoubliables 
+                            et une intrigue palpitante. Un incontournable pour 
+                            tout fan de Fantasy !
+                        </p>
+                        <a href="https://www.amazon.fr/dp/B0DQB3PQCD" target="_blank" rel="noopener noreferrer" class="ad-cta-button">
+                            Découvrir sur Amazon
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION CENTRALE -->
+            <section id="hero" class="text-center">
+                <h1>Bienvenue sur YTC Downloader</h1>
+                <p>Votre outil de téléchargement préféré pour audio et vidéo.</p>
+            </section>
+
+            <!-- PUBLICITÉ DROITE -->
+            <div class="ad-space ad-right">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-XXXXXXXXXXXX" <!-- Remplace par ton ID éditeur -->
+                     data-ad-slot="XXXXXXXXXX"           <!-- Remplace par ton ID d’emplacement -->
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- SECTION DES FONCTIONNALITÉS -->
+        <section id="features-preview" class="feature-grid">
+            <div class="card">
+                <h2>Téléchargement Rapide</h2>
+                <p>Téléchargez vos contenus en quelques secondes grâce à notre technologie optimisée.</p>
+            </div>
+            <div class="card">
+                <h2>Support Multiformat</h2>
+                <p>Compatible avec tous les formats populaires : MP4, MP3, WEBM, MKV et plus encore.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Inclusion du pied de page -->
+    <%- include('partials/footer') %>
+</body>
+</html>

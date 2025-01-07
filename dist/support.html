@@ -1,0 +1,113 @@
+<!-- views/support.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | YTC Downloader</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="">
+                            <i class="fas fa-home"></i> Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="telechargement.html" class="">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a-propos.html" class="">
+                            <i class="fas fa-info-circle"></i> À propos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="active">
+                            <i class="fas fa-headset"></i> Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="">
+                            <i class="fas fa-question-circle"></i> FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="fade-in">
+
+<div class="container">
+    <section id="support">
+        <h1>Support</h1>
+        <p class="section-desc">
+            Nous sommes là pour vous aider. Si vous rencontrez des problèmes avec YTC Downloader ou avez des questions, consultez les options ci-dessous.
+        </p>
+
+        <div class="support-grid">
+            <div class="card">
+                <h2>FAQ</h2>
+                <p>Consultez notre <a href="faq.html">FAQ</a> pour trouver des réponses aux questions les plus fréquentes.</p>
+            </div>
+            <div class="card">
+                <h2>Contactez-nous</h2>
+                <p>Besoin d'une assistance personnalisée ? Contactez notre équipe de support par e-mail.</p>
+                <p><strong>E-mail :</strong> support@ytcdownloader.com</p>
+            </div>
+            <div class="card">
+                <h2>Problèmes Techniques</h2>
+                <p>
+                    Si vous rencontrez un bug ou un problème technique, veuillez le signaler via notre 
+                    <a href="https://github.com/ytcdownloader/issues" target="_blank" rel="noopener noreferrer">page GitHub</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="support-form">
+            <h2>Formulaire de Contact</h2>
+            <p>Remplissez ce formulaire pour poser une question ou signaler un problème. Nous sommes là pour vous aider.</p>
+            <form action="/support" method="POST" class="form-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Envoyer</button>
+            </form>
+        </div>
+        
+        
+
+</main>
+<footer>
+    <div class="container">
+        <p>© 2025 YTC Downloader. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </div>
+</footer>
+<!-- Scripts JavaScript -->
+<script src="js/scripts.js"></script>
+</body>
+</html>
