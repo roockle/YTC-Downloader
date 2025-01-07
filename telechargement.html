@@ -1,0 +1,93 @@
+<!-- views/download.ejs -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement | YTC Downloader</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Intégration de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="">
+                            <i class="fas fa-home"></i> Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="telechargement.html" class="active">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                    </li>
+                    <li>
+                        <a href="a-propos.html" class="">
+                            <i class="fas fa-info-circle"></i> À propos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="">
+                            <i class="fas fa-headset"></i> Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="">
+                            <i class="fas fa-question-circle"></i> FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="fade-in">
+
+<div class="container">
+    <section id="download">
+        <h1 class="page-title">Télécharger YTC Downloader</h1>
+        <p class="section-desc">Compatible avec Windows, macOS et Linux. Choisissez la version adaptée à votre système.</p>
+
+        <div class="download-options">
+            <div class="download-card">
+                <img src="icons/windows.png" alt="Windows" class="os-icon">
+                <h2>Windows</h2>
+                <p>Pour Windows 10 et 11</p>
+                <a href="downloads/ytcdownloader-windows.exe" class="btn">Télécharger</a>
+            </div>
+
+            <div class="download-card">
+                <img src="icons/macos.png" alt="macOS" class="os-icon">
+                <h2>macOS</h2>
+                <p>Pour macOS 10.15 et plus</p>
+                <a href="downloads/ytcdownloader-macos.dmg" class="btn">Télécharger</a>
+            </div>
+
+            <div class="download-card">
+                <img src="icons/linux.png" alt="Linux" class="os-icon">
+                <h2>Linux</h2>
+                <p>Pour Ubuntu/Debian</p>
+                <a href="downloads/ytcdownloader-linux.deb" class="btn">Télécharger</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+</main>
+<footer>
+    <div class="container">
+        <p>© 2025 YTC Downloader. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </div>
+</footer>
+<!-- Scripts JavaScript -->
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+:root {
+    --primary-bg: linear-gradient(135deg, #0b132b, #1c2541, #3a506b, #5e60ce, #1c2541, #0b132b);
+    --nav-bg: rgba(15, 19, 43, 0.9);
+    --accent-color: #1abc9c;
+    --text-color: #ECF0F1;
+    --card-bg: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--primary-bg);
+    background-size: 400% 400%;
+    animation: dynamic-gradient 12s ease-in-out infinite;
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes dynamic-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navigation */
+header {
+    background: var(--nav-bg);
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+/* Section Hero */
+#hero {
+    flex: 1;
+    text-align: center;
+    padding: 6rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16a085;
+}
+
+/* Features Preview */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.feature-grid .card {
+    background: var(--card-bg);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-grid .card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.feature-grid .card p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Download Section */
+#download {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.download-options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.download-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.os-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.download-card h2 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.download-card p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+}
+
+.download-card .btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-card .btn:hover {
+    background: #16a085;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--nav-bg);
+    margin-top: auto;
+}
+
+/* --- Nouveau Bandeau Promotionnel pour le Livre Amazon --- */
+
+/* Section Promotion du Livre Amazon */
+.book-promo {
+    background: rgba(28, 37, 65, 0.9); /* Adapté au thème global */
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .book-promo-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.book-promo-image {
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.book-promo-image:hover {
+    transform: scale(1.05);
+}
+
+.book-promo-description {
+    max-width: 600px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .book-promo-description {
+        text-align: left;
+    }
+}
+
+.book-promo-description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.book-promo-description p {
+    font-size: 1.1rem;
+    color: rgba(236, 240, 241, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.book-promo-description a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.book-promo .cta-button {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-promo .cta-button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
